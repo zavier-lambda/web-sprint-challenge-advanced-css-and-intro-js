@@ -13,15 +13,16 @@ figure, figcaption, footer, header, hgroup,
 menu, nav, output, ruby, section, summary,  
 time, mark, audio, video {  
 margin: 0;  
-padding: 0;  
-border: 0;  
+padding: 0;   
 font-size: 100%;  
 font: inherit;  
 vertical-align: baseline;  
 }
 /*GENERAL STYLES*/
+
 html{
     font-size:62.5%;
+    
 }
 body{
     font-size:1.6rem;
@@ -133,4 +134,39 @@ button:hover{
 }
 .artist img{
     width:100%;
+}
+
+@media (max-width: 500px){
+    header nav a{
+        margin: 0 5%;
+        font-size: 1.8rem;
+    }
+    .title-container div {
+        width: 100%;
+        
+        
+    }
+    .title-container h1 {
+        font-size: 4rem;
+    }
+    .title-container hr{
+        width:100%;
+    }
+    .artists-container{
+        flex-direction: column;
+        margin-bottom: 30%;
+    }
+    .artists-container a{
+        font-size: 1.6rem;
+    }
+    .artist{
+        width: 100%;
+        font-size: 1.3rem;
+    }
+    .artist img{
+        width: 60%;
+        height: auto;
+    }
+
+
 }
